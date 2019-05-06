@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <com.example.storylist.ui.view.CustomFontTextView
+            android:id="@+id/collection_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/collections_title_color"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            app:customFontTypeFace="dancing_script.ttf"/>
+    <View
+            android:id="@+id/underlineView"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignEnd="@+id/collection_title"
+            android:layout_alignLeft="@+id/collection_title"
+            android:layout_alignRight="@+id/collection_title"
+            android:layout_alignStart="@+id/collection_title"
+            android:layout_below="@id/collection_title"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/collections_title_color"/>
+</RelativeLayout>
